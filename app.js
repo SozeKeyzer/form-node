@@ -8,7 +8,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/',require('./routes/home'));
-app.use('/showForm',require('./routes/form'));
 
 app.listen(3000,()=>{
 console.log('server started at port 3000');
